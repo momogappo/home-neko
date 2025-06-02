@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>お問い合わせ - ほめ猫</title>
+  <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'M PLUS Rounded 1c', sans-serif;
+      background: linear-gradient(135deg, #fffbe7, #ffe1f0);
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      max-width: 600px;
+      margin: 40px auto;
+      background: #ffffff;
+      border-radius: 16px;
+      padding: 30px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+      text-align: center;
+    }
+.logo {
+  height: 36px;
+  width: auto;
+  flex-shrink: 0;
+}
+    .nav-header {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 16px;
+      margin-bottom: 1.5rem;
+    }
+
+    .nav-header a {
+      text-decoration: none;
+      color: #000;
+      font-size: 0.95rem;
+    }
+
+    h1 {
+      font-size: 1.5rem;
+      color: #444;
+      margin-bottom: 1rem;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      text-align: left;
+    }
+
+    label {
+      font-weight: bold;
+      color: #444;
+    }
+
+    input, textarea {
+      width: 100%;
+      padding: 10px;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+      font-size: 1rem;
+      box-sizing: border-box;
+    }
+
+    button {
+      padding: 12px;
+      font-size: 1rem;
+      border: none;
+      background: linear-gradient(to right, #ff9a9e, #fad0c4);
+      color: white;
+      border-radius: 30px;
+      cursor: pointer;
+      box-shadow: 0 4px 8px rgba(255, 170, 200, 0.3);
+      transition: all 0.3s ease;
+    }
+
+    button:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 12px rgba(255, 170, 200, 0.4);
+    }
+
+    footer {
+      margin-top: 2em;
+      font-size: 0.85rem;
+      color: #666;
+      text-align: center;
+    }
+
+    @media (max-width: 480px) {
+      .nav-header {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <nav class="nav-header">
+<img src="cat-logo.png" alt="ほめ猫ロゴ" class="logo">
+      <a href="index.html">ホーム</a>
+      <a href="about.html">ほめ猫について</a>
+      <a href="examples.html">投稿のヒント</a>
+      <a href="privacy.html">プライバシーポリシー</a>
+    </nav>
+
+    <h1>🐾 お問い合わせ 🐾</h1>
+
+    <form action="https://formspree.io/f/mpwrzjdv" method="POST">
+      <label for="name">お名前</label>
+      <input type="text" name="name" required>
+
+      <label for="email">メールアドレス</label>
+      <input type="email" name="email" required>
+
+      <label for="message">メッセージ</label>
+      <textarea name="message" rows="5" required></textarea>
+
+      <button type="submit">送信するにゃ 📨</button>
+    </form>
+
+    <footer>
+<img src="cat-logo.png" alt="ほめ猫ロゴ" class="logo">
+<br>thank you🐾</br>
+    </footer>
+  </div>
+</body>
+</html>

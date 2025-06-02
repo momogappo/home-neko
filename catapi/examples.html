@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>投稿のヒント - ほめ猫</title>
+  <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c&display=swap" rel="stylesheet">
+  <style>
+    html {
+      box-sizing: border-box;
+      font-size: 16px;
+    }
+    *, *::before, *::after {
+      box-sizing: inherit;
+    }
+
+    body {
+      font-family: 'M PLUS Rounded 1c', sans-serif;
+      background: linear-gradient(135deg, #fffbe7, #ffe1f0);
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      width: 95%;
+      max-width: 650px;
+      margin: 40px auto;
+      background: #ffffff;
+      border-radius: 16px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+      padding: 30px;
+      text-align: center;
+    }
+
+    .nav-header {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      gap: 16px;
+      font-size: clamp(0.75rem, 2vw, 1rem);
+      white-space: nowrap;
+      margin-bottom: 20px;
+    }
+
+    .nav-header a {
+      text-decoration: none;
+      color: #000;
+　font-size: inherit;
+    }
+
+    .logo {
+      height: 36px;
+      width: auto;
+      flex-shrink: 0;
+    }
+
+    .banner {
+      font-size: clamp(1.2rem, 4vw, 1.8rem);
+      color: #444;
+      background-color: #fffaf2;
+      padding: 20px 16px;
+      border-radius: 12px;
+      margin-bottom: 1.5rem;
+      line-height: 1.5;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      gap: 12px;
+      flex-wrap: nowrap;
+      overflow: hidden;
+      white-space: nowrap;
+    }
+
+    .banner span {
+      white-space: nowrap;
+      flex-shrink: 1;
+    }
+
+    section {
+      max-width: 38em;
+      margin: 0 auto;
+      text-align: center;
+      line-height: 1.8;
+    }
+
+    .tip-list {
+      list-style: none;
+      padding-left: 0;
+      display: flex;
+      flex-direction: column;
+      gap: 1.2rem;
+      margin-top: 1.5rem;
+    }
+
+    .tip-list li {
+      position: relative;
+      background-color: #fffaf2;
+      border: 1px solid #ffe0b2;
+      border-radius: 16px;
+      padding: 1rem 1.2rem;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+      margin: 0 auto 2rem auto;
+      max-width: 90%;
+      text-align: left;
+    }
+
+    .tip-list li::after {
+      content: "";
+      position: absolute;
+      bottom: -20px;
+      right: 20px;
+      border: 12px solid transparent;
+      border-top-color: #ffe0b2; /* 外側の枠線色 */
+      z-index: 0;
+    }
+
+    .tip-list li::before {
+      content: "";
+      position: absolute;
+      bottom: -15px;
+      right: 20px;
+      border: 10px solid transparent;
+      border-top-color: #fffaf2; /* 内側の背景色 */
+      z-index: 1;
+    }
+
+    footer {
+      text-align: center;
+      font-size: 0.9rem;
+      color: #666;
+      margin-top: 2em;
+    }
+
+    footer a {
+      color: #666;
+      text-decoration: underline;
+    }
+
+ @media (max-width: 480px) {
+  .nav-header {
+    flex-direction: column;
+    gap: 8px;
+    white-space: normal; /* ← 折り返しOKにする */
+  }
+
+  .tip-list li {
+    max-width: 100%;  /* ← スマホ幅にフィットさせる */
+    padding: 1rem;
+  }
+
+  .tip-list {
+    padding-left: 0;
+    margin: 0 auto;
+    }
+   }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <nav class="nav-header">
+      <img src="cat-logo.png" alt="ほめ猫ロゴ" class="logo" />
+      <a href="index.html">ホーム</a>
+      <a href="about.html">ほめ猫について</a>
+      <a href="privacy.html">プライバシーポリシー</a>
+    </nav>
+
+    <div class="banner">
+      <span>📌</span>
+      <span><strong>投稿のヒント</strong></span>
+      <span>📝</span>
+    </div>
+
+    <section>
+      <p>こんな行動も「いいこと」にゃ！ぜひ参考にしてにゃ🐾</p>
+
+      <ul class="tip-list">
+        <li>道に落ちていたゴミを拾った</li>
+        <li>誰かに「ありがとう」と声をかけた</li>
+        <li>電車でお年寄りに席を譲った</li>
+        <li>友達の話を最後までちゃんと聞いた</li>
+        <li>動物や植物にやさしくした</li>
+        <li>自分自身にポジティブな言葉をかけた</li>
+      </ul>
+
+      <p>小さなことでも大丈夫にゃ。<br>あなたの優しさ、ちゃんと伝わってるにゃ🐈‍⬛</p>
+    </section>
+
+    <footer>
+      このサイトで発生した収益の一部は、保護猫支援活動に寄付されています 🐾<br />
+      <a href="contact.html">お問い合わせ</a>
+    </footer>
+  </div>
+</body>
+</html>
